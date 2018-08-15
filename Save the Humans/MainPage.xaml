@@ -64,6 +64,18 @@
                 <Ellipse Fill="White" Height="10" Stroke="Black"  Width="10"/>
                 <Rectangle Fill="White" Height="25" Stroke="Black" Width="10"/>
             </StackPanel>
+            <TextBlock x:Name="gameOverText" Canvas.Left="458" TextWrapping="Wrap" Text="Game Over" Canvas.Top="170" FontFamily="Arial Black" FontSize="100" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Rectangle x:Name="target" Height="50" Canvas.Left="522" Stroke="Black" Canvas.Top="74" Width="50" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <CompositeTransform Rotation="45"/>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0786B6"/>
+                        <GradientStop Color="#FFE6F92A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
         </Canvas>
 
         <VisualStateManager.VisualStateGroups>
